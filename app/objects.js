@@ -6,19 +6,20 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
 // Truthy Reference: https://developer.mozilla.org/en-US/docs/Glossary/Truthy
 
-function truthyExtractor(obj) {
 
-}
-
-function truthyExtractor() {
+function truthyExtractor(object) {
+  let output = {}
   for (const key in object) {
-    if (object.hasOwnProperty(key)) {
-      const element = object[key];
-      
+    if (object[key]) {
+      output[key] = object[key];
     }
   }
+  return output;
 }
-)
+
+console.log(truthyExtractor(object));
+
+
 
 // ------------------------------------------
 
