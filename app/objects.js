@@ -17,7 +17,7 @@ function truthyExtractor(object) {
   return output;
 }
 
-console.log(truthyExtractor(object));
+// console.log(truthyExtractor(object));
 
 
 

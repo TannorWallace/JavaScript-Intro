@@ -9,8 +9,8 @@ function capitalizeI(str) {
     if (word == "i") {
       str[index] = word.toUpperCase();
     }
-    return str.join(" ")
   }
+  return str.join(" ")
 }
 
 
@@ -45,5 +45,14 @@ letterCount(jsHistory, "A");
 let text = 'I scream, you scream, we all scream for icecream';
 
 function uppercaseWord(str, word) {
+  // let word = "SCREAM"
+  str = str.split(" ");
+  for (let index = 0; index < str.length; index++) {
+    let currWord = str[index];
+    if (currWord == "scream," || currWord == "scream") {
+      str[index] = currWord.toUpperCase();
 
+    }
+  }
+  return str.join(" ")
 }
