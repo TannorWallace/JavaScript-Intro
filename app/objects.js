@@ -7,14 +7,19 @@
 // Truthy Reference: https://developer.mozilla.org/en-US/docs/Glossary/Truthy
 
 function truthyExtractor(obj) {
-  index = 0;
-  for (let index = 0; index < array.length; index++) {
-    element = array[index];
 
-  }
 }
 
-// cheese it!
+function truthyExtractor() {
+  for (const key in object) {
+    if (object.hasOwnProperty(key)) {
+      const element = object[key];
+      
+    }
+  }
+}
+)
+
 // ------------------------------------------
 
 
@@ -25,6 +30,10 @@ let me = {
   'age': 29,
   'hair color': 'brown'
 };
+
+me.name = 'Tannor Wallace'
+me.age = 31
+me['hair color'] = 'bald'
 
 
 // ------------------------------------------
@@ -37,6 +46,13 @@ let me = {
 // output: [ 'name', 'age', 'hair color' ]
 
 
-function objectKeys(obj) {
 
+
+function objectKeys(object) {
+  let newArray = []
+  for (let key in object) {
+    newArray.push(key)
+  }
+  return newArray;
 }
+objectKeys(me)
