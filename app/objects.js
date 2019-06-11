@@ -7,7 +7,11 @@
 // Truthy Reference: https://developer.mozilla.org/en-US/docs/Glossary/Truthy
 
 function truthyExtractor(obj) {
+  index = 0;
+  for (let index = 0; index < array.length; index++) {
+    element = array[index];
 
+  }
 }
 
 

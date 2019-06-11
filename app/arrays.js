@@ -27,8 +27,14 @@ let tom = {
   email: 'tom@boisecodeworks.com',
   title: 'instructor'
 };
-
+contacts = []
 // add to the array below here
+contacts[0] = jake
+contacts[1] = matt
+contacts[2] = mark
+contacts[3] = darryl
+contacts[4] = tom
+console.log(contacts)
 
 
 
@@ -40,7 +46,7 @@ let tom = {
 // 2. What is the length of contacts at this moment? Assign the anwser to the value of length.
 
 
-let length // **your code here on the right side of the variable declaration and assigment**
+let length = contacts.length;// **your code here on the right side of the variable declaration and assigment**
 
 
 // ------------------------------------------
@@ -52,4 +58,4 @@ let length // **your code here on the right side of the variable declaration and
 // of just the instructors. Populate the variable provided (instructors) using the contacts array. 
 
 
-let instructors = [];
+let instructors = [mark, darryl, tom];
